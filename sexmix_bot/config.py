@@ -1,6 +1,9 @@
-API_ID = 15173451
-API_HASH = "b586e7814d94b789eeea29c4342b39ea"
-BOT_TOKEN = "8475603338:AAFZRZMfdSLZ43MUg5Vb-c25BQl8egtBmLo"
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
-PROMO_LINK = "📍 For more links, join this channel ➡️ https://t.me/+PurxcEPJ-cljYjVl"
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+PROMO_LINK = os.getenv("PROMO_LINK")
